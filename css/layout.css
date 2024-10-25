@@ -10,7 +10,7 @@
    b. Header Styles
    c. About Section
    d. Projects Section
-   f. Blog Section
+   f. Certs Section
    g. Papers section
    i. Footer
 
@@ -230,10 +230,10 @@ ul#nav li.current a { color: #F06000; }
 }
 
 /* ------------------------------------------------------------------ */
-/* f. Blog Section
+/* f. Certs Section
 /* ------------------------------------------------------------------ */
 
-#blog {
+#certs {
    background: #fff;
    padding-top: 00px;
    padding-bottom: 00px;
@@ -242,31 +242,31 @@ ul#nav li.current a { color: #F06000; }
    overflow: hidden;
 }
 
-#blog a, #blog a:visited  { color: #11ABB0; }
-#blog a:hover, #blog a:focus { color: #313131; }
+#certs a, #certs a:visited  { color: #11ABB0; }
+#certs a:hover, #certs a:focus { color: #313131; }
 
-#blog h1 {
+#certs h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
-#blog h1 span {
+#certs h1 span {
    border-bottom: 3px solid #11ABB0;
    padding-bottom: 0px;
 }
-#blog h3 {
+#certs h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
    padding-top: 10px;
 }
 
-#blog .header-col { 
+#certs .header-col { 
    padding-top: 20px;
    padding-bottom: 20px;
    padding-right: 10%; 
 }
-#blog .main-col { padding-right: 10%; }
+#certs .main-col { padding-right: 10%; }
 
-#blog .main-row {
+#certs .main-row {
    padding-bottom: 30px;
 }
 
@@ -275,17 +275,17 @@ ul#nav li.current a { color: #F06000; }
    padding-bottom: 00px;
    border-bottom: 1px solid #E8E8E8;
 }
-#blog .info {
+#certs .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
 }
-#blog .info span {
+#certs .info span {
    margin-right: 5px;
    margin-left: 5px;
 }
-#blog .date {
+#certs .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
