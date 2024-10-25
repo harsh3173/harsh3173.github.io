@@ -55,12 +55,23 @@
       margin-left: 12px;
    }
    #about .contact-details { width: 50%; }
-   #about .download { width: 50%; }
+   #about .education-details { width: 50%; }
+   #about .download { width: 100%; }
 
    /* Resume Section
    ------------------------------------------------------------------- */
    #resume h1 { font: 16px/24px 'opensans-bold', sans-serif; }
-   #resume .main-col { padding-right: 5%; }   
+   #resume .main-col { padding-right: 5%; }
+   
+   /* News Section
+   ------------------------------------------------------------------- */
+   #news h1 { font: 16px/24px 'opensans-bold', sans-serif; }
+   #news .main-col { padding-right: 5%; }
+
+   /* Updates Section
+   ------------------------------------------------------------------- */
+   #updates h1 { font: 16px/24px 'opensans-bold', sans-serif; }
+   #updates .main-col { padding-right: 5%; }
 
    /* Testimonials Section
    ------------------------------------------------------------------- */
@@ -237,6 +248,31 @@
       
    .bars { width: 100%; }
 
+/* News Section
+   --------------------------------------------------------------------- */
+   #news .header-col {
+      padding-top: 0;
+      margin-bottom: 48px;
+      text-align: center;
+   }
+   #news h1 { letter-spacing: 3px; }
+   #news .main-col { padding-right: 30px; }
+   #news h3, #news .info { text-align: center; }
+      
+   .bars { width: 100%; }
+
+/* Updates Section
+   --------------------------------------------------------------------- */
+   #updates .header-col {
+      padding-top: 0;
+      margin-bottom: 48px;
+      text-align: center;
+   }
+   #updates h1 { letter-spacing: 3px; }
+   #updates .main-col { padding-right: 30px; }
+   #updates h3, #updates .info { text-align: center; }
+      
+   .bars { width: 100%; }
 
    /* Call To Action Section
    /* ----------------------------------------------------------------- */
