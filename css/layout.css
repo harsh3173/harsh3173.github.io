@@ -290,6 +290,72 @@ ul#nav li.current a { color: #F06000; }
    margin-top: 6px;
 }
 
+.cert-card {
+   border: 1px solid #e1e1e1;
+   border-radius: 8px;
+   padding: 20px;
+   margin-bottom: 30px;
+   background: #fff;
+   box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+   transition: transform 0.3s ease;
+}
+
+.cert-card:hover {
+   transform: translateY(-5px);
+}
+
+.cert-skills {
+   margin-top: 15px;
+   padding-top: 15px;
+   border-top: 1px solid #eee;
+}
+
+.skill-tag {
+   display: inline-block;
+   background: #11ABB0;
+   color: white;
+   padding: 5px 10px;
+   border-radius: 15px;
+   margin: 5px;
+   font-size: 14px;
+}
+
+.cert-description {
+   color: #666;
+   margin: 15px 0;
+   line-height: 1.6;
+}
+
+.banner-text h1, .banner-text h2 {
+   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.profile-pic {
+   border: 3px solid #11ABB0;
+   transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+   transform: scale(1.05);
+}
+
+#nav-wrap {
+   background: rgba(0,0,0,0.8);
+   backdrop-filter: blur(5px);
+}
+
+.button {
+   transition: all 0.3s ease;
+}
+
+.social li a {
+   transition: transform 0.3s ease;
+}
+
+.social li a:hover {
+   transform: translateY(-3px);
+}
+
 /* ------------------------------------------------------------------ */
 /* f. Papers Section
 /* ------------------------------------------------------------------ */
