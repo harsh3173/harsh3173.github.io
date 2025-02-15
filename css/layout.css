@@ -185,7 +185,7 @@ ul#nav li.current a { color: #11ABB0; }
 /* ------------------------------------------------------------------ */
 #about {
    background: #f5f5f5; /* Subtle overall background */
-   padding: 40px 20px;
+   padding: 30px;
    overflow: hidden;
  }
  
@@ -198,6 +198,7 @@ ul#nav li.current a { color: #11ABB0; }
  
  /* Each column now has increased padding and margin, white background, and centered text */
  .column {
+   max-width: 60rem;
    background: #fff;
    padding: 20px;
    margin: 10px;
@@ -308,7 +309,7 @@ ul#nav li.current a { color: #11ABB0; }
 
 #certs {
    background: #fff;
-   padding: 30px;
+   padding: 10px;
    overflow: hidden;
  }
  
@@ -384,11 +385,12 @@ ul#nav li.current a { color: #11ABB0; }
  .cert-image {
    text-align: center;
    padding: 15px;
+   padding-bottom: 5px;
    background: #fff;
  }
  .cert-image img {
    width: 100%;
-   max-width: 150px;  /* Adjust size for aesthetics */
+   max-width: 16rem;  /* Adjust size for aesthetics */
    height: auto;
    display: block;
    margin: 0 auto;
@@ -397,6 +399,7 @@ ul#nav li.current a { color: #11ABB0; }
  /* Certification Content */
  .cert-content {
    padding: 20px;
+   padding-top: 5px;
  }
  .cert-content h4 {
    margin: 0 0 10px;
@@ -433,11 +436,11 @@ ul#nav li.current a { color: #11ABB0; }
  .certs-container {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   gap: 30px;
+   gap: 5rem;
  }
  
  /* Responsive: 1 card per row on mobile */
- @media (max-width: 600px) {
+ @media (max-width: 768px) {
    .certs-container {
      grid-template-columns: 1fr;
    }
@@ -536,141 +539,163 @@ ul#nav li.current a { color: #11ABB0; }
 /* ------------------------------------------------------------------ */
 
 #projects {
-   background: #fff;
-   padding: 30px;
-   overflow: hidden;
- }
- 
- #projects a,
- #projects a:visited { 
-   color: #11ABB0; 
- }
- #projects a:hover,
- #projects a:focus { 
-   color: #313131; 
- }
- 
- #projects h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 1px;
- }
- #projects h1 span {
-   border-bottom: 3px solid #11ABB0;
-   padding-bottom: 6px;
- }
- #projects h3 {
-   font: 25px/30px 'opensans-bold', sans-serif;
- }
- 
- /* Section header column styling */
- #projects .header-col { 
-   padding-top: 20px;
-   padding-bottom: 20px;
-   padding-right: 10%; 
- }
- #projects .main-col { 
-   padding-right: 10%; 
- }
- 
- #projects .main-row {
-   padding-bottom: 0;
- }
- 
- /* Single project card styling */
- .single_project {
-   margin-bottom: 48px;
-   padding-bottom: 0;
-   border-bottom: 1px solid #E8E8E8;
- }
- #projects .info {
-   font: 16px/24px 'librebaskerville-italic', serif;
-   color: #6E7881;
-   margin-bottom: 18px;
-   margin-top: 9px;
- }
- #projects .info span {
-   margin-right: 5px;
-   margin-left: 5px;
- }
- 
- /* Date styling */
- #projects .date {
-   display: block;
-   font: 15px/24px 'opensans-regular', sans-serif;
-   margin-top: 6px;
- }
- 
- /* Project Card Styles */
- .projects-card {
-   border: 1px solid #e1e1e1;
-   border-radius: 8px;
-   padding-top: 1rem;
-   padding-bottom: 1rem;
-   padding-left: 6rem;
-   padding-right: 6rem;
-   margin-bottom: 30px;
-   background: #fff;
-   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-   transition: transform 0.3s ease;
- }
- 
- .projects-card:hover {
-   transform: translateY(-5px);
- }
- 
- /* Layout for each project card (vertical stacking with gap) */
- #projects .projects-card .main-row {
-   display: flex;
-   flex-direction: column;
-   gap: 20px;  /* Space between title, image, and description */
- }
- 
- /* Title and Date Styling */
- .title-col h2 {
-   font: 20px/28px 'opensans-bold', sans-serif;
-   margin: 0;
- }
- .title-col a {
-   text-decoration: none;
-   color: #11ABB0;
- }
- .title-col a:hover {
-   color: #313131;
- }
- .title-col .date {
-   font: 14px/22px 'opensans-regular', sans-serif;
-   margin-top: 5px;
-   color: #6E7881;
- }
- 
- /* Image Styling */
- .image-col {
-   text-align: center;
-   padding: 10px;
- }
- .image-col img {
-   width: 95%;           /* Adjusts image size to be aesthetic */
-   max-width: 400px;     /* Maximum width to prevent overly large images */
-   height: auto;
-   border-radius: 8px;
-   display: block;
-   margin: 0 auto;
- }
- 
- /* Description Styling */
- .desc-col {
-   padding: 10px;
- }
- .desc-col p {
-   font: 16px/24px 'opensans-regular', sans-serif;
-   color: #333;
-   margin: 0;
- }
+  background: #fff;
+  padding: 10px;
+  overflow: hidden;
+}
 
- 
+#projects a,
+#projects a:visited { 
+  color: #11ABB0; 
+}
+#projects a:hover,
+#projects a:focus { 
+  color: #313131; 
+}
 
- 
+#projects h1 {
+  font: 18px/24px 'opensans-bold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#projects h1 span {
+  border-bottom: 3px solid #11ABB0;
+  padding-bottom: 6px;
+}
+#projects h3 {
+  font: 25px/30px 'opensans-bold', sans-serif;
+}
+
+/* Section header column styling */
+#projects .header-col { 
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10%; 
+}
+#projects .main-col { 
+  padding-right: 10%; 
+}
+
+#projects .main-row {
+  padding-bottom: 0;
+}
+
+/* Single project card styling */
+.single_project {
+  margin-bottom: 48px;
+  padding-bottom: 0;
+  border-bottom: 1px solid #E8E8E8;
+}
+#projects .info {
+  font: 16px/24px 'librebaskerville-italic', serif;
+  color: #6E7881;
+  margin-bottom: 18px;
+  margin-top: 9px;
+}
+#projects .info span {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* Date styling */
+#projects .date {
+  display: block;
+  font: 15px/24px 'opensans-regular', sans-serif;
+  margin-top: 6px;
+}
+
+/* Project Card Styles */
+.projects-card {
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 1rem 5rem;
+  margin-bottom: 20px;
+  background: #fff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.projects-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Layout for each project card (vertical stacking with gap) */
+#projects .projects-card .main-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;  /* Space between title, image, and description */
+}
+
+/* Title and Date Styling */
+.title-col h2 {
+  font: 20px/28px 'opensans-bold', sans-serif;
+  margin: 0;
+}
+.title-col a {
+  text-decoration: none;
+  color: #11ABB0;
+}
+.title-col a:hover {
+  color: #313131;
+}
+.title-col .date {
+  font: 14px/22px 'opensans-regular', sans-serif;
+  margin-top: 5px;
+  color: #6E7881;
+}
+
+/* Image Styling */
+.image-col {
+  text-align: center;
+  padding: 10px;
+}
+.image-col img {
+  width: 95%;           /* Adjusts image size to be aesthetic */
+  max-width: 400px;     /* Maximum width to prevent overly large images */
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Description Styling */
+.desc-col {
+  padding: 10px;
+}
+.desc-col ul {
+  margin: 0;
+  padding-left: 5px;  /* Indent bullet points */
+  list-style-type: square;
+}
+.desc-col li {
+  font: 16px/24px 'opensans-regular', sans-serif;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+/* New CSS for Flex Layout of Image and Description */
+.projects-card .content-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Adjust spacing between image and description as needed */
+}
+
+.projects-card .content-row > .image-col,
+.projects-card .content-row > .desc-col {
+  flex: 1;
+}
+
+/* ------------------------------------------------------------------ */
+/* Responsive Styles
+/* ------------------------------------------------------------------ */
+@media (max-width: 768px) {
+  /* Stack image and description vertically on smaller screens */
+  .projects-card .content-row {
+    flex-direction: column;
+  }
+}
+
+
 /* ------------------------------------------------------------------ */
 /* i. Footer
 /* ------------------------------------------------------------------ */
@@ -689,8 +714,8 @@ footer a:hover, footer a:focus { color: #fff; }
 
 /* copyright */
 footer .copyright {
-    margin: 0;
-    padding: 0;
+    margin: 20px;
+    padding: 20px;
  }
 footer .copyright li {
     display: inline-block;
