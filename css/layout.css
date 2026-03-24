@@ -9,10 +9,11 @@
    a. General Styles
    b. Header Styles
    c. About Section
-   d. Projects Section
-   f. Certs Section
-   g. Papers section
-   i. Footer
+   d. Timeline Section
+   e. Certifications Section
+   f. Papers Section
+   g. Projects Section
+   h. Footer
 
 ===================================================================== */
 
@@ -60,14 +61,14 @@ header .banner-text h1 {
    color: #fff;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
-   text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+   text-shadow: 0 1px 3px rgba(0, 0, 0, .8);
 }
 header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
    color: #A8A8A8;
    margin: 0 auto;
    width: 70%;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+   text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
@@ -85,7 +86,7 @@ header .social {
    margin: 24px 0;
    padding: 0;
    font-size: 30px;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+   text-shadow: 0 1px 2px rgba(0, 0, 0, .8);
 }
 header .social li {
    display: inline-block;
@@ -181,24 +182,23 @@ ul#nav li.current a { color: #11ABB0; }
 
 
 /* ------------------------------------------------------------------ */
-/* About Section Container & Two-Column Layout
+/* c. About Section Container & Two-Column Layout
 /* ------------------------------------------------------------------ */
 #about {
-   background: #f5f5f5; /* Subtle overall background */
-   padding: 30px;
+   background: #f5f5f5;
+   padding: 50px 30px 30px;
    overflow: hidden;
  }
- 
+
  .about-container {
    display: flex;
    gap: 10px;
    flex-wrap: wrap;
    justify-content: center;
  }
- 
- /* Each column now has increased padding and margin, white background, and centered text */
+
  .column {
-   max-width: 60rem;
+   max-width: 960px;
    background: #fff;
    padding: 20px;
    margin: 10px;
@@ -207,19 +207,19 @@ ul#nav li.current a { color: #11ABB0; }
    border-radius: 8px;
    text-align: center;
  }
- 
+
  /* ------------------------------------------------------------------ */
  /* Profile Photo Styling
  /* ------------------------------------------------------------------ */
  .profile-pic {
    width: 100%;
-   max-width: 300px;  /* Increased profile pic size */
+   max-width: 300px;
    margin: 0 auto 20px;
    display: block;
    border-radius: 50%;
    padding: 5px;
  }
- 
+
  /* ------------------------------------------------------------------ */
  /* Headings & Text
  /* ------------------------------------------------------------------ */
@@ -228,13 +228,13 @@ ul#nav li.current a { color: #11ABB0; }
    color: #2B2B2B;
    margin-bottom: 12px;
  }
- 
+
  #about p {
    line-height: 1.8;
    color: #333;
    font-size: 16px;
  }
- 
+
  /* ------------------------------------------------------------------ */
  /* Contact Details & Download Button
  /* ------------------------------------------------------------------ */
@@ -242,7 +242,7 @@ ul#nav li.current a { color: #11ABB0; }
  .address a {
    font-size: 15px;
  }
- 
+
  .download .button {
    margin-top: 10px;
    background: #444;
@@ -251,24 +251,23 @@ ul#nav li.current a { color: #11ABB0; }
    padding: 8px 16px;
    border-radius: 4px;
    display: inline-block;
-   min-width: 200px; /* Added to ensure a wider button */
-   text-align: center; /* Ensures text remains centered */
+   min-width: 200px;
+   text-align: center;
  }
- 
+
  .download .button:hover {
    background: #fff;
    color: #2B2B2B;
    border: 1px solid #2B2B2B;
  }
- 
+
  .download .button i {
    margin-right: 10px;
    font-size: 18px;
  }
- 
- 
+
  /* ------------------------------------------------------------------ */
- /* Education Items Styling - Vertical Layout with Logo on Top
+ /* Education Items Styling
  /* ------------------------------------------------------------------ */
  .education-item {
    margin-bottom: 40px;
@@ -278,41 +277,197 @@ ul#nav li.current a { color: #11ABB0; }
    border-radius: 8px;
    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
  }
- 
+
  .education-logo {
    margin-bottom: 15px;
  }
- 
+
  .education-logo img {
    width: 100%;
-   max-width: 200px;  /* Reduced image width/height for a more compact logo */
+   max-width: 200px;
    height: auto;
    display: inline-block;
    padding: 5px;
  }
- 
+
  .education-info h3 {
    margin: 0 0 10px;
    font-size: 20px;
    color: #2B2B2B;
  }
- 
+
  .education-info p {
    margin: 5px 0;
    color: #333;
    font-size: 16px;
  }
- 
+
 /* ------------------------------------------------------------------ */
-/* Certifications Section
+/* d. Timeline Section (Work Experience) — Left-aligned
+/* ------------------------------------------------------------------ */
+
+#timeline {
+  background: #fff;
+  padding: 50px 20px 50px;
+  overflow: hidden;
+}
+
+#timeline h1 {
+  font: 18px/24px 'opensans-bold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#timeline h1 span {
+  border-bottom: 3px solid #11ABB0;
+  padding-bottom: 6px;
+}
+#timeline .header-col {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10%;
+}
+
+/* The vertical line — left side */
+.timeline {
+  position: relative;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 27px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #11ABB0, #0d8a8e);
+  border-radius: 3px;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  left: 22px;
+  bottom: -4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #0d8a8e;
+}
+
+/* Each timeline entry */
+.timeline-item {
+  position: relative;
+  padding: 0 0 32px 60px;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.timeline-item.timeline-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Simple dot on the line */
+.timeline-dot {
+  position: absolute;
+  left: 19px;
+  top: 24px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #11ABB0;
+  border: 3px solid #fff;
+  z-index: 2;
+  box-shadow: 0 0 0 3px #11ABB0;
+}
+
+/* Content card */
+.timeline-content {
+  background: #f9f9f9;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 22px 26px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #11ABB0;
+}
+
+.timeline-content:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Card header: titles on left, logo on right */
+.timeline-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+.timeline-card-titles {
+  flex: 1;
+}
+.timeline-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 6px;
+  mix-blend-mode: multiply;
+}
+
+/* Typography inside cards */
+.timeline-content h3 {
+  font: 19px/26px 'opensans-bold', sans-serif;
+  color: #2B2B2B;
+  margin: 0 0 4px;
+}
+.timeline-content h4 {
+  font: 15px/22px 'librebaskerville-italic', serif;
+  color: #6E7881;
+  margin: 0 0 4px;
+  font-weight: normal;
+}
+.timeline-date {
+  font: 13px/20px 'opensans-regular', sans-serif;
+  color: #11ABB0;
+  display: block;
+  margin-bottom: 8px;
+}
+.timeline-content ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  list-style-type: square;
+}
+.timeline-content li {
+  font: 14px/22px 'opensans-regular', sans-serif;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+/* ---- Timeline Responsive ---- */
+@media (max-width: 768px) {
+  .timeline-item {
+    padding-left: 56px;
+  }
+  .timeline-logo {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* e. Certifications Section
 /* ------------------------------------------------------------------ */
 
 #certs {
    background: #f5f5f5;
-   padding: 10px;
+   padding: 50px 10px 10px;
    overflow: hidden;
  }
- 
+
  #certs a,
  #certs a:visited {
    color: #11ABB0;
@@ -321,7 +476,7 @@ ul#nav li.current a { color: #11ABB0; }
  #certs a:focus {
    color: #313131;
  }
- 
+
  #certs h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
@@ -335,7 +490,7 @@ ul#nav li.current a { color: #11ABB0; }
    font: 25px/30px 'opensans-bold', sans-serif;
    padding-top: 10px;
  }
- 
+
  #certs .header-col {
    padding-top: 20px;
    padding-bottom: 20px;
@@ -344,13 +499,13 @@ ul#nav li.current a { color: #11ABB0; }
  #certs .main-col {
    padding-right: 10%;
  }
- 
+
  .post {
    margin-bottom: 0;
    padding-bottom: 0;
    border-bottom: 1px solid #E8E8E8;
  }
- 
+
  #certs .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
@@ -364,7 +519,7 @@ ul#nav li.current a { color: #11ABB0; }
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
  }
- 
+
  /* Certification Card Styles */
  .cert-card {
    background: #fff;
@@ -376,11 +531,11 @@ ul#nav li.current a { color: #11ABB0; }
    display: flex;
    flex-direction: column;
  }
- 
+
  .cert-card:hover {
    transform: translateY(-5px);
  }
- 
+
  /* Certification Image on Top */
  .cert-image {
    text-align: center;
@@ -390,12 +545,12 @@ ul#nav li.current a { color: #11ABB0; }
  }
  .cert-image img {
    width: 100%;
-   max-width: 16rem;  /* Adjust size for aesthetics */
+   max-width: 256px;
    height: auto;
    display: block;
    margin: 0 auto;
  }
- 
+
  /* Certification Content */
  .cert-content {
    padding: 20px;
@@ -431,21 +586,21 @@ ul#nav li.current a { color: #11ABB0; }
    margin: 5px 5px 0 0;
    font-size: 14px;
  }
- 
+
  /* Grid Container for Certification Cards (2 per row) */
  .certs-container {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   gap: 5rem;
+   gap: 80px;
  }
- 
+
  /* Responsive: 1 card per row on mobile */
  @media (max-width: 768px) {
    .certs-container {
      grid-template-columns: 1fr;
    }
  }
- 
+
  /* Optional: General Hover and Text Shadow Effects */
  .banner-text h1,
  .banner-text h2 {
@@ -453,10 +608,6 @@ ul#nav li.current a { color: #11ABB0; }
  }
  .profile-pic {
    border: 3px solid #11ABB0;
-   transition: transform 0.3s ease;
- }
- .profile-pic:hover {
-   transform: scale(1.05);
  }
  #nav-wrap {
    background: rgba(0, 0, 0, 0.8);
@@ -471,17 +622,14 @@ ul#nav li.current a { color: #11ABB0; }
  .social li a:hover {
    transform: translateY(-3px);
  }
- 
+
 /* ------------------------------------------------------------------ */
 /* f. Papers Section
 /* ------------------------------------------------------------------ */
 
 #papers {
    background: #fff;
-   padding-top: 00px;
-   padding-bottom: 00px;
-   padding-left: 30px;
-   padding-right: 30px;
+   padding: 0 30px;
    overflow: hidden;
 }
 
@@ -495,35 +643,35 @@ ul#nav li.current a { color: #11ABB0; }
 }
 #papers h1 span {
    border-bottom: 3px solid #11ABB0;
-   padding-bottom: 0px;
+   padding-bottom: 0;
 }
 #papers h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
    padding-top: 10px;
 }
 
-#papers .header-col { 
+#papers .header-col {
    padding-top: 20px;
    padding-bottom: 20px;
-   padding-right: 10%; 
+   padding-right: 10%;
    width: 100%;
 }
 #papers .main-col { padding-right: 10%; }
 
 #papers .main-row {
-   padding-bottom: 0px;
+   padding-bottom: 0;
 }
 
 .post{
-   margin-bottom: 00px;
-   padding-bottom: 00px;
+   margin-bottom: 0;
+   padding-bottom: 0;
    border-bottom: 1px solid #E8E8E8;
 }
 #papers .info {
    font: 16px/24px 'calibri', serif;
    color: #11ABB0;
    margin-bottom: 2px;
-   margin-top: 0px;
+   margin-top: 0;
 }
 #papers .info span {
    margin-right: 5px;
@@ -535,22 +683,22 @@ ul#nav li.current a { color: #11ABB0; }
 }
 
 /* ------------------------------------------------------------------ */
-/* Projects Section
+/* g. Projects Section
 /* ------------------------------------------------------------------ */
 
 #projects {
-  background: #f5f5f5;
-  padding: 10px;
+  background: #fff;
+  padding: 50px 10px 10px;
   overflow: hidden;
 }
 
 #projects a,
-#projects a:visited { 
-  color: #11ABB0; 
+#projects a:visited {
+  color: #11ABB0;
 }
 #projects a:hover,
-#projects a:focus { 
-  color: #313131; 
+#projects a:focus {
+  color: #313131;
 }
 
 #projects h1 {
@@ -567,13 +715,13 @@ ul#nav li.current a { color: #11ABB0; }
 }
 
 /* Section header column styling */
-#projects .header-col { 
+#projects .header-col {
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-right: 10%; 
+  padding-right: 10%;
 }
-#projects .main-col { 
-  padding-right: 10%; 
+#projects .main-col {
+  padding-right: 10%;
 }
 
 #projects .main-row {
@@ -608,7 +756,7 @@ ul#nav li.current a { color: #11ABB0; }
 .projects-card {
   border: 1px solid #e1e1e1;
   border-radius: 8px;
-  padding: 1rem 5rem;
+  padding: 16px 80px;
   margin-bottom: 20px;
   background: #fff;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
@@ -623,7 +771,7 @@ ul#nav li.current a { color: #11ABB0; }
 #projects .projects-card .main-row {
   display: flex;
   flex-direction: column;
-  gap: 10px;  /* Space between title, image, and description */
+  gap: 10px;
 }
 
 /* Title and Date Styling */
@@ -650,8 +798,8 @@ ul#nav li.current a { color: #11ABB0; }
   padding: 10px;
 }
 .image-col img {
-  width: 95%;           /* Adjusts image size to be aesthetic */
-  max-width: 400px;     /* Maximum width to prevent overly large images */
+  width: 95%;
+  max-width: 400px;
   height: auto;
   border-radius: 8px;
   display: block;
@@ -664,7 +812,7 @@ ul#nav li.current a { color: #11ABB0; }
 }
 .desc-col ul {
   margin: 0;
-  padding-left: 5px;  /* Indent bullet points */
+  padding-left: 5px;
   list-style-type: square;
 }
 .desc-col li {
@@ -673,11 +821,11 @@ ul#nav li.current a { color: #11ABB0; }
   margin-bottom: 6px;
 }
 
-/* New CSS for Flex Layout of Image and Description */
+/* Flex Layout of Image and Description */
 .projects-card .content-row {
   display: flex;
   flex-direction: row;
-  gap: 20px; /* Adjust spacing between image and description as needed */
+  gap: 20px;
 }
 
 .projects-card .content-row > .image-col,
@@ -693,11 +841,14 @@ ul#nav li.current a { color: #11ABB0; }
   .projects-card .content-row {
     flex-direction: column;
   }
+  .projects-card {
+    padding: 16px 24px;
+  }
 }
 
 
 /* ------------------------------------------------------------------ */
-/* i. Footer
+/* h. Footer
 /* ------------------------------------------------------------------ */
 
 footer {
@@ -779,4 +930,3 @@ footer .social-links li:first-child { margin-left: 0; }
  	border-radius: 100%;
 }
 #go-top a:hover { background-color: #0F9095; }
-
